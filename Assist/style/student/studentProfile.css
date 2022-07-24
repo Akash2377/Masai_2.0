@@ -1,0 +1,434 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#NavBarY {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#NavBarY > div {
+  display: flex;
+  justify-content: flex-end;
+}
+#NavBarY > div > div {
+  margin: 20px 100px 0 0;
+  cursor: pointer;
+  position: relative;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+#NavBarY > div > div:hover {
+  overflow: visible;
+  background-color: #f2f6ff;
+  color: #5386e8;
+}
+#NavBarY > div > div > i:first-child {
+  margin-right: 15px;
+}
+#NavBarY > div > div > i:last-child {
+  margin-left: 15px;
+}
+#StudentProfileSec {
+  display: none;
+}
+#StudentProfileDiv {
+  position: absolute;
+  border: 1px solid skyblue;
+  background-color: white;
+  border-radius: 8px;
+  height: 80px;
+  width: 170px;
+  top: 55px;
+  right: 100px;
+}
+#StudentProfileDiv > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#StudentProfileDiv > div > i {
+  margin-right: 20px;
+}
+#StudentProfileDiv > div:hover {
+  overflow: hidden;
+  background-color: #f2f6ff;
+  color: #5386e8;
+}
+#sideBarY {
+  width: 230px;
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 23px;
+  color: white;
+  z-index: 2;
+  box-shadow: rgb(217 217 217) -1px 0px 0px 0px inset;
+}
+
+#sideBarY > div:first-child {
+  width: 100%;
+}
+#sideBarY > div:first-child > img {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+#sideBarY > button {
+  padding: 30px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-left: 4px solid white;
+  border-right: 1px solid rgba(128, 128, 128, 0.466);
+  background-color: white;
+  cursor: pointer;
+  height: 50px;
+}
+#sideBarY > button:hover {
+  background-color: #f2f6ff;
+  color: #5386e8;
+  border-left: 4px solid #5386e8;
+}
+
+#sideBarY i {
+  margin-right: 20px;
+}
+#mainContent {
+  position: relative;
+  width: 100%;
+}
+#mainContentSec {
+  position: absolute;
+  width: 1000px;
+  margin-top: 100px;
+  margin-left: 250px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+#youtubeVideo,
+#WatchLectures,
+#DemoClasses,
+#AllCourses,
+#FavCourses,
+#MyCourses,
+#MyCart {
+  display: none;
+}
+
+#profilesection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  background-color: #1a9fbd;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+#profileMainDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#profileImg,
+#profileImg img {
+  display: block;
+  margin: auto;
+  width: 130px;
+  border-radius: 90px;
+  height: 150px;
+}
+#leftPartOfDiv {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+#leftPartOfDiv > div:last-child > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#leftPartOfDiv > div:last-child > div p {
+  margin: 5px;
+}
+#leftPartOfDiv > div:last-child > div p {
+  margin-left: 20px;
+}
+#rightPartOfDiv {
+  margin-top: 70px;
+}
+#rightPartOfDiv td {
+  padding: 0 20px;
+}
+#EditButton {
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  background-color: crimson;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#EditButton:hover {
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: crimson;
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#UpdateInformation {
+  display: none;
+}
+#UpdateInformation form > div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+#UpdateInformation > form > div > div {
+  display: flex;
+  flex-direction: column;
+}
+#UpdateInformation input,
+#UpdateInformation label {
+  width: 350px;
+  height: 25px;
+  font-size: 21px;
+  margin: 5px 0;
+}
+
+#UpdateInformation select {
+  width: 300px;
+  height: 30px;
+  font-size: 21px;
+}
+#updateSA {
+  background-color: green;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#cancelSA {
+  background-color: red;
+  padding: 10px 30px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+form {
+  background-color: rgba(95, 48, 57, 0.507);
+  margin: 0 50px;
+  border-radius: 10px;
+}
+#DemoClasses > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#DemoClasses > div > iframe {
+  width: 320px;
+  height: 200px;
+  border-radius: 5px;
+}
+#DemoClasses > div > iframe {
+  margin: 20px;
+}
+#appendWatchLectures,
+#appendMyCourses,
+#appendFavCourses,
+#appendCartCourses,
+#appendAllCourses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#appendMyCourses > div,
+#appendCartCourses > div,
+#appendFavCourses > div,
+#appendAllCourses > div {
+  width: 330px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#appendWatchLectures > div {
+  width: 330px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+
+  padding: 16px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#appendWatchLectures > div > h1:first-child {
+  margin-top: -5px;
+  width: 80%;
+  background-color: #6e71cc;
+
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url("https://dashboard.masaischool.com/static/media/course-card-background.b6e2a866.png");
+  background-size: 100%;
+}
+#appendWatchLectures > div > h3 {
+  margin: 0px;
+}
+#appendWatchLectures > div > button {
+  border-radius: 5px;
+  border: none;
+  background-color: #3470e4;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  width: 200px;
+  cursor: pointer;
+}
+#appendWatchLectures > div > button:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#contentTop {
+  padding-left: 5px;
+
+  height: 140px;
+  width: 100%;
+  background-color: #6e71cc;
+  border-radius: 15px;
+  background-image: url("https://dashboard.masaischool.com/static/media/course-card-background.b6e2a866.png");
+  background-size: 100%;
+}
+#contentTop > p:last-child {
+  color: white;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+#contentTop > p:first-child {
+  border-radius: 10px;
+  font-size: 13px;
+  background-color: #f2fdff;
+  color: #1a9fbd;
+  width: 70px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#contentMiddle {
+  height: 240px;
+  width: 100%;
+}
+#contentMiddle > p {
+  padding: 2px;
+}
+#contentMiddle > div > p > i {
+  margin-right: 10px;
+}
+#contentMiddle > div {
+  padding: 25px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contentEnd {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+}
+#contentEnd > button:first-child {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #3470e4;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#contentEnd > button:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#contentEnd > button:last-child {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: crimson;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#appendVideo > div > iframe {
+  width: 1000px;
+  height: 500px;
+  border-radius: 5px;
+}

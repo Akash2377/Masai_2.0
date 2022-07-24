@@ -1,0 +1,75 @@
+{
+  "studentLoginData": [
+    {
+      "password": "1234",
+      "email": "vikasmore@gmail.com",
+      "phone": "9080808080",
+      "userLoginId": 1658656526044,
+      "id": 1,
+      "name": "Vikas More",
+      "gender": "male",
+      "address": "Solapur",
+      "dateOfBirth": "2003-06-18"
+    }
+  ],
+  "superAdminLoginData": [
+    {
+      "id": 1,
+      "name": "Akash Surve",
+      "userName": "superAdmin",
+      "password": "1234",
+      "email": "surveakash01@masai.com",
+      "phone": "8080808080",
+      "gender": "male",
+      "address": "Pune",
+      "dateOfBirth": "1995-07-22",
+      "userLoginId": "9876543210"
+    }
+  ],
+  "adminLoginData": [
+    {
+      "name": "Ayush Kumar",
+      "gender": "male",
+      "dateOfBirth": "2001-08-05",
+      "password": "1234",
+      "email": "ayushkumar@masai.com",
+      "phone": "9090909090",
+      "address": "Pune",
+      "userLoginId": 1658656466564,
+      "id": 1
+    }
+  ],
+  "courses": [
+    {
+      "name": "Full Stack Web Development ",
+      "fees": "250000",
+      "about": "Start your coding career and become an industry-ready Full Stack Web Developer in India's ever-growing technology job market.",
+      "courseTime": "FULL TIME",
+      "courseDuration": "35",
+      "fav": true,
+      "cart": false,
+      "myCourse": true,
+      "lectures": [
+        {
+          "LectureName": "HTML Introduction",
+          "info": "Introduction to HTML, CSS, JavaScript & How websites work? ",
+          "urlLecture": "6mbwJ2xhgzM",
+          "id": 1658656396496
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Full Stack Android Development",
+      "fees": "300000",
+      "about": "Start your coding career and become an industry-ready Full Stack Android Developer in India's ever-growing technology job market.",
+      "courseTime": "PART TIME",
+      "courseDuration": "50",
+      "fav": true,
+      "cart": false,
+      "myCourse": false,
+      "lectures": [],
+      "id": 2
+    }
+  ]
+}

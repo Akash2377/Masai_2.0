@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai | Signup</title>
+    <script src="https://kit.fontawesome.com/584aebd994.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+    <link rel="stylesheet" href="../Assist/style/login.css" />
+  </head>
+  <body>
+    <div>
+      <img src="https://sso.masaischool.com/brand_dark.svg" alt="Masai Logo" />
+    </div>
+    <div id="parent">
+      <h1 id="flagAdminOrNot">Super Admin Sign in</h1>
+
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" id="userEmail" />
+
+        <label>Password</label>
+        <div id="show">
+          <img
+            src="../Assist/images/eye-slash-solid.svg"
+            alt="eye"
+            id="eye"
+            onclick="myFunction()"
+          />
+        </div>
+        <input type="password" placeholder="Enter password" id="userPassword" />
+
+        <input
+          style="border: none"
+          type="submit"
+          value="SIGN IN"
+          class="btn-disabled"
+        />
+        <button type="button">
+          <img src="https://sso.masaischool.com/google.svg" alt="google" />
+          <span>CONTINUE WITH GOOGLE</span>
+        </button>
+      </form>
+      <a
+        style="text-decoration: none; font-weight: bold; margin-bottom: 5px"
+        href="../index.html"
+        >RETURN HOME</a
+      >
+    </div>
+  </body>
+</html>
+<script src="../server/js/login.js"></script>

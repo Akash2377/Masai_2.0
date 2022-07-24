@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assist/style/superAdmin/dashBoard.css" />
+    <title>Add Lectures</title>
+    <script src="https://kit.fontawesome.com/584aebd994.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+  </head>
+  <body>
+    <nav id="NavBar">
+      <img
+        src="https://www.masaischool.com/img/navbar/logo.svg"
+        alt="Masai school"
+      />
+      <a href="./createCourse.html">Create Course</a>
+      <a href="./EditCourse.html"  style="background-color: #fed7d73d; color: crimson">Add Lectures</a>
+      <a href="./ManageAdmin.html">Manage Admin</a>
+      <a href="./ManageStudent.html">Manage Students</a>
+      <div id="profileSelectDiv">
+        <img id="logoSA" src="../Assist/images/014.jpg" alt="SuperAdmin" />
+        <select id="profileSelect" onchange="Changepage()">
+          <option value="My Account">My Account</option>
+          <option value="Profile">Profile</option>
+          <option value="Change Password">Change Password</option>
+          <option value="Logout">Logout</option>
+        </select>
+      </div>
+    </nav>
+    <section id="Manage_Student_Details">
+      <div>
+        <form id="StudentManForm">
+          <h1 id="StudentorAdmin">Add New lecture</h1>
+          <label>Course name</label>
+
+          <select id="CRCName">
+            
+          </select>
+          <label>Lecture URL</label>
+          <input type="text" placeholder="Enter Lecture URL" id="lectureUrl" />
+          <label>Lecture Topic</label>
+          <input
+            type="text"
+            placeholder="Enter Lectures Topic "
+            id="lectureTpic"
+          />
+          <label>Lecture Content</label>
+          <input
+            type="text"
+            placeholder="Enter Lectures Content"
+            id="lectureAbout"
+          />
+          <input type="submit" id="Addlectrue" />
+        </form>
+      </div>
+      <div>
+        <table id="StudentTable">
+          <thead>
+            <th>ID</th>
+            <th>Name of Course</th>
+            <th>Lecture Title</th>
+            <th>Details of Lecture</th>
+            
+            <th>Delete</th>
+          </thead>
+          <tbody id="courseNameTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="../Assist/js/SuperAdmin/addLecture.js"></script>

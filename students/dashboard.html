@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <script
+      src="https://kit.fontawesome.com/584aebd994.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+    <link rel="stylesheet" href="../Assist/style/student/studentProfile.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav id="NavBarY">
+      <div>
+        <div id="SudentNameDiv" onclick="OpenDiv()">
+          <i class="fa-solid fa-user"></i
+          ><span id="StudentProfileUpdate">User Name</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <section id="StudentProfileSec">
+          <div id="StudentProfileDiv">
+            <div onclick="noneAndBlock('StudentProfileSec2')">
+              <i class="fa-solid fa-user"></i>My Profile
+            </div>
+            <div onclick="SignOutStudent();">
+              <i class="fa-solid fa-right-from-bracket"></i>Sign Out
+            </div>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <!-- nav bar end -->
+    <!-- side Bar -->
+    <div id="sideBarY">
+      <div>
+        <img
+          src="https://dashboard.masaischool.com/static/media/masailogo.ab93bfe1.svg"
+          alt=""
+        />
+      </div>
+      <button onclick="noneAndBlock('DemoClasses')" id="btnDemo">
+        <i class="fa-solid fa-laptop"></i>Demo Classes
+      </button>
+      <button onclick="noneAndBlock('AllCourses')" id="btnAllCourse">
+        <i class="fa-solid fa-graduation-cap"></i>All Courses
+      </button>
+      <button onclick="noneAndBlock('MyCourses')" id="btnMyCourse">
+        <i class="fa-solid fa-book-open-reader"></i>My Courses
+      </button>
+      <button onclick="noneAndBlock('FavCourses')" id="btnMyFav">
+        <i class="fa-brands fa-gratipay"></i>My Favorite
+      </button>
+      <button onclick="noneAndBlock('MyCart')" id="btnMyCart">
+        <i class="fa-solid fa-cart-shopping"></i>My Cart
+      </button>
+    </div>
+    <!-- side Bar end-->
+    <!-- main content of the page -->
+    <section id="mainContentSec">
+      <div id="mainContent">
+        <section id="StudentProfileSec2">
+          <section id="profilesection">
+            <div id="profileMainDiv">
+              <div id="leftPartOfDiv">
+                <div id="profileImg">
+                  <img
+                    src="https://www.w3schools.com/howto/img_avatar.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <div>
+                    <h1 id="profileName">User Name</h1>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p id="profileMo">0123456789</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p id="profileEmail">user@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <div id="rightPartOfDiv">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Date of Birth:</td>
+                      <td id="dob"></td>
+                    </tr>
+                    <tr>
+                      <td>Gender:</td>
+                      <td id="gender"></td>
+                    </tr>
+                    <tr>
+                      <td>Address:</td>
+                      <td id="address"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <button id="EditButton" onclick="DisplayUpdateSA()">Edit</button>
+            </div>
+          </section>
+          <section id="UpdateInformation">
+            <form id="UpdateSAform">
+              <div>
+                <div>
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    id="nameSA"
+                    required="required"
+                  />
+                  <label>Mobile No</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Number"
+                    id="phoneSA"
+                    required="required"
+                  />
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    id="emailSA"
+                    required="required"
+                  />
+                </div>
+                <div>
+                  <label>Date of Birth</label>
+                  <input
+                    type="date"
+                    placeholder="Enter Date of Birth"
+                    id="dateSA"
+                    required="required"
+                  />
+                  <label>Gender</label>
+                  <select id="genderSA">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                  </select>
+                  <label>Address</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Address"
+                    id="addressSA"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div>
+                <button id="updateSA">Update</button>
+                <button type="button" onclick="HideUpdateSA()" id="cancelSA">
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </section>
+        </section>
+        <section id="DemoClasses">
+          <div>
+            <iframe
+              src="https://www.youtube.com/embed/aIVH2ZxvXmU"
+              title="Full Stack Web Development Course for Beginners | Masai School"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/b6oiWC9i7hY"
+              title="Boost your career with Part-Time courses at Masai"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/BWIsr8MC6gs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/nknwAOtmtDk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/hKB-YGF14SY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section id="AllCourses">
+          <div id="appendAllCourses"></div>
+        </section>
+        <section id="FavCourses">
+          <div id="appendFavCourses"></div>
+        </section>
+        <section id="MyCourses">
+          <div id="appendMyCourses"></div>
+        </section>
+        <section id="WatchLectures">
+          <div id="appendWatchLectures"></div>
+        </section>
+        <section id="youtubeVideo">
+          <div id="appendVideo"></div>
+        </section>
+        <section id="MyCart">
+          <div id="appendCartCourses"></div>
+        </section>
+      </div>
+    </section>
+    <!-- main content of the page end-->
+  </body>
+</html>
+
+<script src="../Assist/js/studentLogin&signup/studentDashboard.js"></script>
