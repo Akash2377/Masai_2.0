@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assist/style/superAdmin/dashBoard.css" />
+    <title>Add Course</title>
+    <script src="https://kit.fontawesome.com/584aebd994.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+  </head>
+  <body>
+    <nav id="NavBar">
+      <img
+        src="https://www.masaischool.com/img/navbar/logo.svg"
+        alt="Masai school"
+      />
+      <a
+        href="./createCourse.html"
+        style="background-color: #fed7d73d; color: crimson"
+        >Create Course</a
+      >
+      <a href="./EditCourse.html">Add Lectures</a>
+      <a href="./ManageAdmin.html">Manage Admin</a>
+      <a href="./ManageStudent.html">Manage Students</a>
+      <div id="profileSelectDiv">
+        <img id="logoSA" src="../Assist/images/014.jpg" alt="SuperAdmin" />
+        <select id="profileSelect" onchange="Changepage()">
+          <option value="My Account">My Account</option>
+          <option value="Profile">Profile</option>
+          <option value="Change Password">Change Password</option>
+          <option value="Logout">Logout</option>
+        </select>
+      </div>
+    </nav>
+
+    <section id="Manage_Student_Details">
+      <div>
+        <form id="StudentManForm">
+          <h1 id="StudentorAdmin">Add New Course</h1>
+          <label>Course name</label>
+          <input type="text" placeholder="Enter Course name" id="CRCName" />
+          <label>Course Fees</label>
+          <input type="number" placeholder="Enter Fees" id="CourseFees" />
+          <label>About</label>
+          <input type="text" placeholder="Enter Course details" id="CRCabout" />
+          <label>Duration</label>
+          <input
+            type="number"
+            placeholder="Enter Course Duration"
+            id="CRCduration"
+          />
+          <select id="CourseTime">
+            <option value="FULL TIME">FULL TIME</option>
+            <option value="PART TIME">PART TIME</option>
+          </select>
+          <input type="submit" id="AddStudentNew" />
+        </form>
+      </div>
+      <div>
+        <table id="StudentTable">
+          <thead>
+            <th>ID</th>
+            <th>Name of Course</th>
+            <th>Fees of Course</th>
+            <th>Details of Course</th>
+            <th>Course Type</th>
+            <th>Course Duration</th>
+            <th>Total lectures</th>
+            <th>Delete</th>
+          </thead>
+          <tbody id="courseNameTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="../Assist/js/SuperAdmin/createCourse.js"></script>

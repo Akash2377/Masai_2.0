@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Assist/style/superAdmin/profile.css" />
+    <title>Super Admin Profile</title>
+    <script src="https://kit.fontawesome.com/584aebd994.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+  </head>
+  <body>
+    <nav id="NavBar">
+      <img
+        src="https://www.masaischool.com/img/navbar/logo.svg"
+        alt="Masai school"
+      />
+      <a href="./createCourse.html">Create Course</a>
+      <a href="./EditCourse.html">Add Lectures</a>
+      <a href="./ManageAdmin.html">Manage Admin</a>
+      <a href="./ManageStudent.html">Manage Students</a>
+      <div id="profileSelectDiv">
+        <img id="logoSA" src="../Assist/images/014.jpg" alt="SuperAdmin" />
+        <select id="profileSelect" onchange="Changepage()">
+          <option value="Profile">Profile</option>
+          <option value="My Account">My Account</option>
+          <option value="Change Password">Change Password</option>
+          <option value="Logout">Logout</option>
+        </select>
+      </div>
+    </nav>
+    <section id="profilesection">
+      <div id="profileMainDiv">
+        <div id="leftPartOfDiv">
+          <div id="profileImg">
+            <img src="../Assist/images/014.jpg" alt="" />
+          </div>
+          <div>
+            <div>
+              <h1 id="profileName">User Name</h1>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p id="profileMo">0123456789</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p id="profileEmail">user@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div id="rightPartOfDiv">
+          <table>
+            <tbody>
+              <tr>
+                <td>Date of Birth:</td>
+                <td id="dob"></td>
+              </tr>
+              <tr>
+                <td>Gender:</td>
+                <td id="gender"></td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td id="address"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <button id="EditButton" onclick="DisplayUpdateSA()">Edit</button>
+      </div>
+    </section>
+    <section id="UpdateInformation">
+      <form id="UpdateSAform">
+        <div>
+          <div>
+            <label>Name</label>
+            <input
+              type="text"
+              placeholder="Enter Name"
+              id="nameSA"
+              required="required"
+            />
+            <label>Mobile No</label>
+            <input
+              type="number"
+              placeholder="Enter Number"
+              id="phoneSA"
+              required="required"
+            />
+            <label>Email</label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              id="emailSA"
+              required="required"
+            />
+          </div>
+          <div>
+            <label>Date of Birth</label>
+            <input
+              type="date"
+              placeholder="Enter Date of Birth"
+              id="dateSA"
+              required="required"
+            />
+            <label>Gender</label>
+            <select id="genderSA">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="transgender">Transgender</option>
+            </select>
+            <label>Address</label>
+            <input
+              type="text"
+              placeholder="Enter Address"
+              id="addressSA"
+              required="required"
+            />
+          </div>
+        </div>
+        <div>
+          <button id="updateSA">Update</button>
+          <button type="button" onclick="HideUpdateSA()" id="cancelSA">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
+<script src="../Assist/js/SuperAdmin/profileS.js"></script>
+<script
+  src="https://kit.fontawesome.com/584aebd994.js"
+  crossorigin="anonymous"
+></script>

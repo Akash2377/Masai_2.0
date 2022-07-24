@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="../Assist/style/student/payment.css" />
+    <script
+      src="https://kit.fontawesome.com/584aebd994.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://d27028dliefpk3.cloudfront.net/assets/favicon/favicon-32x32.png"
+      class="jsx-397bb7cff0cecce7"
+    />
+  </head>
+  <body>
+    <section>
+      <h1>Masai Payment</h1>
+      <div id="form">
+        <form id="form1">
+          <label>Card Holder Name</label>
+          <input
+            type="text"
+            placeholder="Card Holder Name"
+            required="required"
+            id="CrdHolderName"
+          />
+          <label>Card Number</label>
+          <input
+            type="text"
+            placeholder="Card Number - 16 Digits Number"
+            required="required"
+            minlength="16"
+            maxlength="16"
+            id="crdNumber"
+          />
+          <label>CVV</label>
+          <input
+            type="text"
+            placeholder="CVV Number"
+            required="required"
+            id="CrdHolderName"
+            minlength="3"
+            maxlength="3"
+          />
+          <label>Expiry Date</label>
+
+          <input type="month" min="1" max="31" step="1" placeholder="Month" />
+
+          <input type="submit" value="Get OTP" id="GetOTPI" />
+        </form>
+        <form id="form2">
+          <input
+            type="text"
+            placeholder="Enter OTP"
+            maxlength="4"
+            minlength="4"
+            id="EnterOTP"
+            required="required"
+          />
+          <input type="submit" value="MakePayment" id="makePayment" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="../Assist/js/studentLogin&signup/payment.js"></script>
