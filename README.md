@@ -19,144 +19,270 @@
 I am pursuing a Full Stack Web Development course at Masai school, In Masai school, I have given a project. It was a pretty good project to work on. The task was to create a course platform. Let's look at how I designed it 
 
  ## 👨‍✈️ Masai2.0 Landing Page    💻 👇
+<br>
 
 ![CwyiHSwvZ](https://user-images.githubusercontent.com/103267138/180660196-9c5b656c-9056-4ed2-b38f-ba384fb2776d.png)
 
+ <br>
+
 ## 👨‍✈️ Home Page Code💻 👇
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658676048122/eOAYWQLF2.png)
 
+ <br>
+
 ## 👨‍✈️ Login Page 
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678256793/ZuMf0Rhcw.png)
+
+ <br>
 
 
 ## 👨‍✈️ Login Page for Super Admin 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658676103927/GlkDBxHlY.png)
+
+ <br>
 
 ## 👨‍✈️ Super Admin Profile Page 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658676163716/BPGR3mjfM.png)
+
+ <br>
 
 ## 👨‍✈️ Super Admin Update Profile Page 💻 👇
 >• Super Admin can update his profile
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658676196189/R-Xefzf6l.png)
+
+ <br>
 
 ## 👨‍✈️ Create Course Page 💻 👇
 >- Super Admin can create the new course.
-- Super Admin can delete the existing course by delete option.
+>- Super Admin can delete the existing course by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658680815717/uTO-EjxZH.png )
 
+ <br>
+
 ## 👨‍✈️  Add Lectures To Course 💻 👇
 >- Super Admin can add lectures to an existing course.
-- Super Admin can delete the existing lectures by delete option.
+>- Super Admin can delete the existing lectures by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658680831063/-a3AQFcAY.png)
 ## Manage Admin Data 💻 👇
 >- Super Admin can add a new Admin to the course platform.
-- Super Admin can delete the existing admin by delete option.
+>- Super Admin can delete the existing admin by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658677954011/OfdST21Qq.png)
 
+ <br>
+
 ## 👨‍✈️ Manage Student Data  💻 👇
 >- Super Admin can add a new student to the course platform.
-- Super Admin can delete the existing student by delete option.
+>- Super Admin can delete the existing student by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678018939/bXJmLsOpR.png)
 
+ <br>
+
 ## 👨‍💼 Login Page For Admin 💻 👇
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678337290/7jhdjhYmI.png)
 
+ <br>
+
 ## 👨‍💼 Profile Page of Admin 💻 👇
 >• Admin can update his profile
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678593673/u7J5g-6ta.png)
+
+ <br>
 
 ## 👨‍💼 Change Password 💻 👇
 >• Admin can update his Password
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678835830/KoZ6VHpEa.png)
+
+ <br>
 
 ## 👨‍💼 Account Page of Admin 💻 👇
 >• Admin can see all the available courses and lectures
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681241398/9Tzkq-w0V.png)
+
+ <br>
 
 ## 👨‍💼 Add Lectures 💻 👇
 >- Admin can add lectures to an existing course.
-- Admin can delete the existing lectures by delete option.
+>- Admin can delete the existing lectures by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681260662/CibRHToE4.png)
 
+ <br>
+
 ## 👨‍💼 Manage Students 💻 👇
 >- Admin can add a new student to the course platform.
-- The admin can delete the existing student by delete option.
+>- The admin can delete the existing student by delete option.
+
+ <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658678763312/k6jZd7eo_.png)
 
 
+ <br>
+
 
 ## 🤵🏼 Student Login Page 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681328564/4AFVKjlYA.png)
+
+ <br>
 
 ## 🤵🏼 Student Profile Page 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681375867/fk6TonRIW.png)
+
+ <br>
 
 ## 🤵🏼 Course Demo Classes 💻 👇
 >- Students can watch demo classes without Purchasing the course
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681416721/TKAykfVrX.png)
+
+ <br>
 
 ## 🤵🏼 All Courses 💻 👇
 >- Students can see all the courses.
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681481692/oJ5GUOLgj.png)
+
+ <br>
 
 ## 🤵🏼 ❤️ Favorite Courses ❤️ 💻 👇
 >- Students can add courses in favorites.
-- Students can remove courses from favorites.
+>- Students can remove courses from favorites.
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681598006/p7jJKJfbV.png)
+
+ <br>
 
 ## 🤵🏼 My Cart Courses 💻 👇
 >- Students can add courses to the cart.
-- Students can remove courses from the cart.
-- Students can buy the courses which are added to the cart 
+>- Students can remove courses from the cart.
+>- Students can buy the courses which are added to the cart 
+
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681648757/icmnAoNpf.png)
+
+ <br>
 
 ## 🤵🏼 💰  Masai Payment Method  💰 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658681967648/2MSmftUbs.png)
+
+ <br>
 
 ## 🤵🏼  💰 OTP POPUP 💰 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682023958/ScS7MaQd7.png)
+
+ <br>
 
 ## 🤵🏼 💰  Enter Valid OTP 💰 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682066823/4RmXwXpSi.png)
+
+ <br>
 
 ## 🤵🏼 🥳 Payment Confirmation 🥳 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682103792/XFG0vXMAG.png)
+
+ <br>
 
 ## 🤵🏼  Now see Purchased Course in My Course 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682176144/eMKMPk8jJ.png)
+
+ <br>
 
 ## 🤵🏼 📒 Now see all lectures 💻 👇
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682235979/ryHBtZd_w.png)
+
+ <br>
+
 
 
 ## 🤵🏼 💿 Play Video 💿 💻 👇
 
 
+ <br>
+
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658682277992/gAwB73TP0.png)
 
+ <br>
 
+# 🥰 Happy learning 🥰
+ 
+ <br>
+ 
 ## Create JSON Server
+
+ <br>
+
 ```
 {
   "studentLoginData": [
@@ -316,6 +442,10 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
 }
 ```
 
+ <br>
+
+
+
 ## Technology Used
 > • HTML
 > • CSS
@@ -324,16 +454,28 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
 > • Local Storage
 > • JSON Server
 
+
+ <br>
+
 ## Tools
 > • VS Code
 > • Github
 > • Postman
 
+
+ <br>
+
 ## Blog link
 > ### •[Masai 2.0]()
 
+
+ <br>
+
 ## Project link
 > ### •[Masai 2.0](https://jocular-crumble-977ef6.netlify.app)
+
+
+ <br>
 
 ## Github link
 > ### •[Masai 2.0](https://github.com/Akash2377/Masai_2.0)
