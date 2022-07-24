@@ -84,7 +84,7 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
  <br>
 
 ![CwyiHSwvZ](https://cdn.hashnode.com/res/hashnode/image/upload/v1658680831063/-a3AQFcAY.png)
-## Manage Admin Data 💻 👇
+## 👨‍✈️ Manage Admin Data 💻 👇
 >- Super Admin can add a new Admin to the course platform.
 >- Super Admin can delete the existing admin by delete option.
 
@@ -205,7 +205,7 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
 
  <br>
 
-## 🤵🏼 My Cart Courses 💻 👇
+## 🤵🏼 🛒 My Cart Courses 🛒 💻 👇
 >- Students can add courses to the cart.
 >- Students can remove courses from the cart.
 >- Students can buy the courses which are added to the cart 
