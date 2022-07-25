@@ -441,6 +441,11 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
   ]
 }
 ```
+## Start JSON Server
+```
+json-server --watch login.json
+
+```
 
  <br>
 
@@ -466,7 +471,7 @@ I am pursuing a Full Stack Web Development course at Masai school, In Masai scho
  <br>
 
 ## Blog link
-> ### •[Masai 2.0]()
+> ### •[Masai 2.0](https://hashnode.com/post/masai-20-cl5zohabi07ba08nv0z14fnts)
 
 
  <br>
