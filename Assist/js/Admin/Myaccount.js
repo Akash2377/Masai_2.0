@@ -36,14 +36,18 @@ function showMyCourses(data) {
                   <p>${ele.name}</p>
                 </div>
                 <div id="contentMiddle">
-                  <p>${ele.about}</p>
+                  <p>${ele.about.slice(0, 100)} ...</p>
                   <p>Total lectures Available : ${ele.lectures.length}</p>
 
-                  <div><p><i class="fa-solid fa-laptop"></i><span>Online</span></p><p><i class="fa-solid fa-calendar-days"></i><span>${ele.courseDuration} Weeks</span></p></div>
+                  <div><p><i class="fa-solid fa-laptop"></i><span>Online</span></p><p><i class="fa-solid fa-calendar-days"></i><span>${
+                    ele.courseDuration
+                  } Weeks</span></p></div>
                 </div>
      
                 <div id="contentEnd">
-                  <button onclick="WatchLecturesinWindow(${ele.id})">See All Lectures</button>
+                  <button onclick="WatchLecturesinWindow(${
+                    ele.id
+                  })">See All Lectures</button>
                 </div>`;
     let div = document.createElement("div");
     div.innerHTML = divData;
@@ -71,8 +75,10 @@ function showAllLectures(data) {
     let divData = `
               <h1>${data.name}</h1>
               <h3>Lecture Title : ${element.LectureName}</h3>
-              <p>Information : ${element.info}</p>
-              <button onclick="WatchLectureOnYoutube(${data.id},${element.id})">Watch Lecture</button>
+              <p>Information : ${element.info.slice(1, 50)} ...</p>
+              <button onclick="WatchLectureOnYoutube(${data.id},${
+      element.id
+    })">Watch Lecture</button>
                 `;
     let div = document.createElement("div");
     div.innerHTML = divData;

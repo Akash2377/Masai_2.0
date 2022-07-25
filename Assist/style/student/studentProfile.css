@@ -383,13 +383,13 @@ form {
   width: 100%;
 }
 #contentMiddle > p {
-  padding: 2px;
+  padding: 0px;
 }
 #contentMiddle > div > p > i {
   margin-right: 10px;
 }
 #contentMiddle > div {
-  padding: 25px;
+  padding: 10px;
   margin-top: -15px;
   display: flex;
   justify-content: space-between;
