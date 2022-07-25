@@ -471,7 +471,7 @@ json-server --watch login.json
  <br>
 
 ## Blog link
-> ### •[Masai 2.0](https://hashnode.com/post/masai-20-cl5zohabi07ba08nv0z14fnts)
+> ### •[Masai 2.0](https://learnwithmasai2.hashnode.dev/masai-20)
 
 
  <br>
