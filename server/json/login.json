@@ -55,6 +55,30 @@
           "info": "Introduction to HTML, CSS, JavaScript & How websites work? ",
           "urlLecture": "6mbwJ2xhgzM",
           "id": 1658656396496
+        },
+        {
+          "LectureName": "JavaScript Tutorial ",
+          "info": "JavaScript Introduction & Basics of JavaScript ",
+          "urlLecture": "hKB-YGF14SY",
+          "id": 1658679435777
+        },
+        {
+          "LectureName": "JavaScript + Setup",
+          "info": "JavaScript Setup Information ",
+          "urlLecture": "ER9SspLe4Hg",
+          "id": 1658679652940
+        },
+        {
+          "LectureName": "const, let and var in JavaScript",
+          "info": "Java Script data type and Its difference ",
+          "urlLecture": "Icev9Oxf0WA",
+          "id": 1658679751331
+        },
+        {
+          "LectureName": "Primitives and Objects in JavaScript",
+          "info": "Primitives and Objects in JavaScript | JavaScript Tutoria",
+          "urlLecture": "qpU3WIqRz9I",
+          "id": 1658679914053
         }
       ],
       "id": 1
@@ -67,9 +91,66 @@
       "courseDuration": "50",
       "fav": true,
       "cart": false,
-      "myCourse": false,
-      "lectures": [],
+      "myCourse": true,
+      "lectures": [
+        {
+          "LectureName": "Android Development Tutorial ",
+          "info": "Introduction - Downloading Android Studio  - Important Note - Installing Android Studio - Configuring Android Studio - Starting New Project  - Gradle Scripts ",
+          "urlLecture": "qK0QNA0sMGc",
+          "id": 1658680082650
+        },
+        {
+          "LectureName": "Introduction to Next.js",
+          "info": "Next.js Tutorials for beginners in Hindi: In this video, we will start learning Next.js and will get introduced to this awesome framework. Next.js solves a lot of problems with React which will be discussed in this video!",
+          "urlLecture": "DZKOunP-WLQ",
+          "id": 1658680537241
+        }
+      ],
       "id": 2
+    },
+    {
+      "name": "Data Analytics",
+      "fees": "200000",
+      "about": "Break into the fast-growing field of Data Analytics and launch yourself into a variety of roles like Business Intelligence Analyst, Data Analyst & Data Scientist among others.",
+      "courseTime": "PART TIME",
+      "courseDuration": "30",
+      "fav": false,
+      "cart": true,
+      "myCourse": false,
+      "lectures": [
+        {
+          "LectureName": "Excel",
+          "info": "Microsoft Excel Tutorial for Beginners - Full Course",
+          "urlLecture": "Vl0H-qTclOg",
+          "id": 1658680609944
+        },
+        {
+          "LectureName": "Learn Python - Full Course ",
+          "info": "This course will give you a full introduction into all of the core concepts in python. Follow along with the videos and you'll be a python programmer in no time!",
+          "urlLecture": "rfscVS0vtbw",
+          "id": 1658680672427
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Design",
+      "fees": "500000",
+      "about": "Become the catalyst that bridges the interaction between humans and computers by landing job roles in UI Design, UX Design, Product Design among many others.",
+      "courseTime": "FULL TIME",
+      "courseDuration": "50",
+      "fav": false,
+      "cart": false,
+      "myCourse": false,
+      "lectures": [
+        {
+          "LectureName": " Web Design Course",
+          "info": "Learn how to design a website from scratch. ",
+          "urlLecture": "C72WkcUZvco",
+          "id": 1658680786928
+        }
+      ],
+      "id": 4
     }
   ]
 }

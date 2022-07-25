@@ -18,9 +18,11 @@ function showAllCourses(data) {
                 </div>
                 <div id="contentMiddle">
                   
-                   <p>${ele.about}</p>
+                   <p>${ele.about.slice(0, 200)} ...</p>
                   <p>Pay Only &#8377;${ele.fees} & Earn 5LPA</p>
-                  <div><p><i class="fa-solid fa-laptop"></i><span>Online</span></p><p><i class="fa-solid fa-calendar-days"></i><span>${ele.courseDuration} Weeks</span></p></div>
+                  <div><p><i class="fa-solid fa-laptop"></i><span>Online</span></p><p><i class="fa-solid fa-calendar-days"></i><span>${
+                    ele.courseDuration
+                  } Weeks</span></p></div>
                 </div>
                 <div id="contentEnd">
                   <button onclick="openCourse()"> View Details</button>
