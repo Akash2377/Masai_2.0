@@ -8,7 +8,7 @@ function checkLoginStatus() {
 selectTagoption();
 async function selectTagoption() {
   try {
-    let url = "http://localhost:3000/courses";
+    let url = "https://jesonserverforzee5.herokuapp.com/courses";
     let res = await fetch(url);
     let data = await res.json();
     addSelectTagOption(data);
@@ -50,7 +50,7 @@ function AddStudentInClass(event) {
 async function getDataFromServer() {
   try {
     let idO = document.getElementById("CRCName").value;
-    let url = `http://localhost:3000/courses/${idO}`;
+    let url = `https://jesonserverforzee5.herokuapp.com/courses/${idO}`;
     let res = await fetch(url);
     let data = await res.json();
 
@@ -68,7 +68,7 @@ function check(data) {
     id: Date.now(),
   };
   data.push(obj);
-  fetch(`http://localhost:3000/courses/${idO}`, {
+  fetch(`https://jesonserverforzee5.herokuapp.com/courses/${idO}`, {
     method: "PATCH",
     body: JSON.stringify({
       lectures: data,
@@ -80,7 +80,7 @@ function check(data) {
 showDataInTable();
 async function showDataInTable() {
   try {
-    let url = "http://localhost:3000/courses";
+    let url = "https://jesonserverforzee5.herokuapp.com/courses";
     let res = await fetch(url);
     let data = await res.json();
     displayDataInTable(data);
@@ -107,11 +107,13 @@ function displayDataInTable(data) {
 }
 async function deleteSTD(index, ind2) {
   try {
-    let res = await fetch(`http://localhost:3000/courses/${index}`);
+    let res = await fetch(
+      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
+    );
     let data = await res.json();
     let arr = data.lectures;
     arr.splice(ind2, 1);
-    fetch(`http://localhost:3000/courses/${index}`, {
+    fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
       method: "PATCH",
       body: JSON.stringify({
         lectures: arr,

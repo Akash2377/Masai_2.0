@@ -13,7 +13,7 @@ function submitData(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "http://localhost:3000/adminLoginData";
+      let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
@@ -54,7 +54,9 @@ function myFunction() {
 async function pointOutAdmin() {
   let keyUser = localStorage.getItem("KeyOfLogin");
   try {
-    let res = await fetch("http://localhost:3000/adminLoginData");
+    let res = await fetch(
+      "https://jesonserverforzee5.herokuapp.com/adminLoginData"
+    );
     let data = await res.json();
     let index = 1;
     for (var i = 0; i < data.length; i++) {
@@ -69,7 +71,7 @@ async function pointOutAdmin() {
 }
 
 function upadtePassInServer(index) {
-  fetch(`http://localhost:3000/adminLoginData/${index}`, {
+  fetch(`https://jesonserverforzee5.herokuapp.com/adminLoginData/${index}`, {
     method: "PATCH",
     body: JSON.stringify({
       password: document.getElementById("CNewPass").value,

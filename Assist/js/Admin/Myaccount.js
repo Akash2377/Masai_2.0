@@ -21,7 +21,7 @@ function Changepage() {
 fetchAllCoursesData();
 async function fetchAllCoursesData() {
   try {
-    let res = await fetch("http://localhost:3000/courses");
+    let res = await fetch("https://jesonserverforzee5.herokuapp.com/courses");
     let data = await res.json();
     showMyCourses(data);
   } catch (error) {
@@ -61,7 +61,9 @@ async function WatchLecturesinWindow(index) {
   document.getElementById("MyCourses").style.display = "none";
   document.getElementById("WatchLectures").style.display = "block";
   try {
-    let res = await fetch(`http://localhost:3000/courses/${index}`);
+    let res = await fetch(
+      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
+    );
     let data = await res.json();
     showAllLectures(data);
   } catch (error) {
@@ -88,7 +90,9 @@ function showAllLectures(data) {
 async function WatchLectureOnYoutube(index, urlkey) {
   localStorage.setItem("urlKEy", urlkey);
   try {
-    let res = await fetch(`http://localhost:3000/courses/${index}`);
+    let res = await fetch(
+      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
+    );
     let data = await res.json();
     showOnScreen(data.lectures);
   } catch (error) {

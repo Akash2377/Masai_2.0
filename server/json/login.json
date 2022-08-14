@@ -10,6 +10,17 @@
       "gender": "male",
       "address": "Solapur",
       "dateOfBirth": "2003-06-18"
+    },
+    {
+      "password": "123",
+      "email": "surveakash01@gmail.com",
+      "phone": "8668458742",
+      "userLoginId": 1658751514254,
+      "id": 2,
+      "name": "Akash Surve",
+      "gender": "male",
+      "address": "PUNE",
+      "dateOfBirth": "2022-07-24"
     }
   ],
   "superAdminLoginData": [
@@ -46,7 +57,7 @@
       "about": "Start your coding career and become an industry-ready Full Stack Web Developer in India's ever-growing technology job market.",
       "courseTime": "FULL TIME",
       "courseDuration": "35",
-      "fav": true,
+      "fav": false,
       "cart": false,
       "myCourse": true,
       "lectures": [
@@ -115,8 +126,8 @@
       "courseTime": "PART TIME",
       "courseDuration": "30",
       "fav": false,
-      "cart": true,
-      "myCourse": false,
+      "cart": false,
+      "myCourse": true,
       "lectures": [
         {
           "LectureName": "Excel",
@@ -140,7 +151,7 @@
       "courseTime": "FULL TIME",
       "courseDuration": "50",
       "fav": false,
-      "cart": false,
+      "cart": true,
       "myCourse": false,
       "lectures": [
         {

@@ -28,7 +28,7 @@ function AddStudentInClass(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "http://localhost:3000/courses";
+      let url = "https://jesonserverforzee5.herokuapp.com/courses";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
@@ -47,7 +47,7 @@ function check(data) {
   if (flag.length != 0) {
     alert("Course is already Available");
   } else {
-    fetch("http://localhost:3000/courses", {
+    fetch("https://jesonserverforzee5.herokuapp.com/courses", {
       method: "POST",
       body: JSON.stringify({
         name: document.getElementById("CRCName").value,
@@ -68,7 +68,7 @@ function check(data) {
 showDataInTable();
 async function showDataInTable() {
   try {
-    let url = "http://localhost:3000/courses";
+    let url = "https://jesonserverforzee5.herokuapp.com/courses";
     let res = await fetch(url);
     let data = await res.json();
     displayDataInTable(data);
@@ -95,7 +95,7 @@ function displayDataInTable(data) {
   });
 }
 function deleteSTD(index) {
-  fetch(`http://localhost:3000/courses/${index}`, {
+  fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
     method: "DELETE",
     body: JSON.stringify({}),
     headers: {
