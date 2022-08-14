@@ -29,12 +29,12 @@ function AddStudentInClass(event) {
   async function getDataFromServer() {
     try {
       if (flagcheck == "Add New Admin") {
-        let url = "http://localhost:3000/adminLoginData";
+        let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
       } else {
-        let url = "http://localhost:3000/studentLoginData";
+        let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
@@ -64,7 +64,7 @@ function check(data) {
     }
   } else {
     if (flagcheck == "Add New Admin") {
-      fetch("http://localhost:3000/adminLoginData", {
+      fetch("https://jesonserverforzee5.herokuapp.com/adminLoginData", {
         method: "POST",
         body: JSON.stringify({
           name: document.getElementById("StudName").value,
@@ -79,7 +79,7 @@ function check(data) {
         headers: { "Content-Type": "application/json" },
       });
     } else {
-      fetch("http://localhost:3000/studentLoginData", {
+      fetch("https://jesonserverforzee5.herokuapp.com/studentLoginData", {
         method: "POST",
         body: JSON.stringify({
           name: document.getElementById("StudName").value,
@@ -101,12 +101,12 @@ showDataInTable();
 async function showDataInTable() {
   try {
     if (flagcheck == "Add New Admin") {
-      let url = "http://localhost:3000/adminLoginData";
+      let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
       let res = await fetch(url);
       let data = await res.json();
       displayDataInTable(data);
     } else {
-      let url = "http://localhost:3000/studentLoginData";
+      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       displayDataInTable(data);
@@ -152,7 +152,7 @@ function displayDataInTable(data) {
 }
 function deleteSTD(index) {
   if (flagcheck == "Add New Admin") {
-    fetch(`http://localhost:3000/adminLoginData/${index}`, {
+    fetch(`https://jesonserverforzee5.herokuapp.com/adminLoginData/${index}`, {
       method: "DELETE",
       body: JSON.stringify({}),
       headers: {
@@ -161,14 +161,16 @@ function deleteSTD(index) {
     });
     showDataInTable();
   } else {
-    fetch(`http://localhost:3000/studentLoginData/${index}`, {
-      method: "DELETE",
-      body: JSON.stringify({}),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    fetch(
+      `https://jesonserverforzee5.herokuapp.com/studentLoginData/${index}`,
+      {
+        method: "DELETE",
+        body: JSON.stringify({}),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     showDataInTable();
   }
 }
-

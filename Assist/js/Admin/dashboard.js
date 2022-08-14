@@ -28,7 +28,7 @@ function AddStudentInClass(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "http://localhost:3000/studentLoginData";
+      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
@@ -48,7 +48,7 @@ function check(data) {
   if (flag.length != 0) {
     alert("Student is already in the classroom");
   } else {
-    fetch("http://localhost:3000/studentLoginData", {
+    fetch("https://jesonserverforzee5.herokuapp.com/studentLoginData", {
       method: "POST",
       body: JSON.stringify({
         name: document.getElementById("StudName").value,
@@ -68,7 +68,7 @@ function check(data) {
 showDataInTable();
 async function showDataInTable() {
   try {
-    let url = "http://localhost:3000/studentLoginData";
+    let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
     let res = await fetch(url);
     let data = await res.json();
     displayDataInTable(data);
@@ -95,7 +95,7 @@ function displayDataInTable(data) {
 }
 
 function deleteSTD(index) {
-  fetch(`http://localhost:3000/studentLoginData/${index}`, {
+  fetch(`https://jesonserverforzee5.herokuapp.com/studentLoginData/${index}`, {
     method: "DELETE",
     body: JSON.stringify({}),
     headers: {

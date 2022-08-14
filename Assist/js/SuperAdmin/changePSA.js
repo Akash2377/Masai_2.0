@@ -13,7 +13,7 @@ function submitData(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "http://localhost:3000/superAdminLoginData";
+      let url = "https://jesonserverforzee5.herokuapp.com/superAdminLoginData";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
@@ -53,7 +53,7 @@ function myFunction() {
 }
 
 function upadtePassInServer() {
-  fetch(" http://localhost:3000/superAdminLoginData/1", {
+  fetch(" https://jesonserverforzee5.herokuapp.com/superAdminLoginData/1", {
     method: "PATCH",
     body: JSON.stringify({
       password: document.getElementById("CNewPass").value,

@@ -65,6 +65,7 @@ body {
   background-color: #f2f6ff;
   color: #5386e8;
 }
+
 #sideBarY {
   width: 230px;
   position: fixed;
@@ -109,7 +110,11 @@ body {
   color: #5386e8;
   border-left: 4px solid #5386e8;
 }
-
+#sideBarY > button:focus {
+  background-color: #f2f6ff;
+  color: #5386e8;
+  border-left: 4px solid #5386e8;
+}
 #sideBarY i {
   margin-right: 20px;
 }

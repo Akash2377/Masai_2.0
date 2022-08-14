@@ -26,7 +26,7 @@ function PaymentProcess(event) {
 }
 
 function buyTheCourse(index) {
-  fetch(`http://localhost:3000/courses/${index}`, {
+  fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
     method: "PATCH",
     body: JSON.stringify({
       myCourse: true,

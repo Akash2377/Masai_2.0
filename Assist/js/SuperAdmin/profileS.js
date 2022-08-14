@@ -21,7 +21,7 @@ function Changepage() {
 getDataFromServer();
 async function getDataFromServer() {
   try {
-    let url = "http://localhost:3000/superAdminLoginData";
+    let url = "https://jesonserverforzee5.herokuapp.com/superAdminLoginData";
     let res = await fetch(url);
     let data = await res.json();
     ShowDataOnProfile(data);
@@ -46,7 +46,7 @@ function ShowDataOnProfile(data) {
 document.getElementById("UpdateSAform").addEventListener("submit", UpdateSA);
 function UpdateSA(event) {
   event.preventDefault();
-  fetch(" http://localhost:3000/superAdminLoginData/1", {
+  fetch(" https://jesonserverforzee5.herokuapp.com/superAdminLoginData/1", {
     method: "PATCH",
     body: JSON.stringify({
       name: document.getElementById("nameSA").value,

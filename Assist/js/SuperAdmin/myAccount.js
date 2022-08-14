@@ -1,7 +1,7 @@
 fetchAllCoursesData();
 async function fetchAllCoursesData() {
   try {
-    let res = await fetch("http://localhost:3000/courses");
+    let res = await fetch("https://jesonserverforzee5.herokuapp.com/courses");
     let data = await res.json();
 
     showAllCourses(data);
