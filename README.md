@@ -478,7 +478,7 @@ json-server --watch login.json
  <br>
 
 ## Project link
-> ### •[Masai 2.0](https://jocular-crumble-977ef6.netlify.app)
+> ### •[Masai 2.0](https://masai2-0learningapp.netlify.app)
 
 
  <br>
