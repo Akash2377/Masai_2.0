@@ -1,3 +1,15 @@
+# [Masai 2.0](https://masai2-0learningapp.netlify.app/)
+<h2>An Online Learning App</h2>
+<h3>Masai2.0 is a platform that allows instructors to build online courses and teach 49 million+ students. Students can wishlist, add to cart, buy and review courses.</h3>
+<h4>Tech Stack : HTML | CSS | JavaScript | JSON Server</h4>
+<h4>Features : </h4>
+<p>---> Sign Up | Login</p>
+<p>---> Home Page | Super Admin Page | Admin Page | Student Page | Profile Page ( Dynamic )</p>
+<p>---> Add Course in cart | Add Course in favorites </p>
+<p>---> Buy Course | Apply Coupons | Payment</p>
+
+<br />
+
 
 ## **☠️ Problem statement ☠️**
 ## Consider you have to create a website using CRUD which contains
