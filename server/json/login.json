@@ -1,28 +1,5 @@
 {
-  "studentLoginData": [
-    {
-      "password": "1234",
-      "email": "vikasmore@gmail.com",
-      "phone": "9080808080",
-      "userLoginId": 1658656526044,
-      "id": 1,
-      "name": "Vikas More",
-      "gender": "male",
-      "address": "Solapur",
-      "dateOfBirth": "2003-06-18"
-    },
-    {
-      "password": "123",
-      "email": "surveakash01@gmail.com",
-      "phone": "8668458742",
-      "userLoginId": 1658751514254,
-      "id": 2,
-      "name": "Akash Surve",
-      "gender": "male",
-      "address": "PUNE",
-      "dateOfBirth": "2022-07-24"
-    }
-  ],
+  "studentLoginData": [],
   "superAdminLoginData": [
     {
       "id": 1,
