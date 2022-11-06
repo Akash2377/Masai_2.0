@@ -26,7 +26,6 @@ function showAllCourses(data) {
                 </div>
                 <div id="contentEnd">
                   <button onclick="openCourse()"> View Details</button>
-
                 </div>
              `;
     let div = document.createElement("div");
