@@ -36,7 +36,7 @@ function onProfileClick() {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
+      let url = "https://jesonserver.onrender.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       ShowDataOnProfile(data);
@@ -68,7 +68,7 @@ function onProfileClick() {
     let keyUser = localStorage.getItem("KeyOfLogin");
     try {
       let res = await fetch(
-        "https://jesonserverforzee5.herokuapp.com/studentLoginData"
+        "https://jesonserver.onrender.com/studentLoginData"
       );
       let data = await res.json();
       let index = 1;
@@ -83,21 +83,18 @@ function onProfileClick() {
     }
   }
   function UpdateSA(index) {
-    fetch(
-      `https://jesonserverforzee5.herokuapp.com/studentLoginData/${index}`,
-      {
-        method: "PATCH",
-        body: JSON.stringify({
-          name: document.getElementById("nameSA").value,
-          email: document.getElementById("emailSA").value,
-          phone: document.getElementById("phoneSA").value,
-          gender: document.getElementById("genderSA").value,
-          address: document.getElementById("addressSA").value,
-          dateOfBirth: document.getElementById("dateSA").value,
-        }),
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    fetch(`https://jesonserver.onrender.com/studentLoginData/${index}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        name: document.getElementById("nameSA").value,
+        email: document.getElementById("emailSA").value,
+        phone: document.getElementById("phoneSA").value,
+        gender: document.getElementById("genderSA").value,
+        address: document.getElementById("addressSA").value,
+        dateOfBirth: document.getElementById("dateSA").value,
+      }),
+      headers: { "Content-Type": "application/json" },
+    });
     alert("Profile Update Successfully");
     document.getElementById("UpdateInformation").style.display = "none";
   }
@@ -114,7 +111,7 @@ function HideUpdateSA() {
 fetchAllCoursesData();
 async function fetchAllCoursesData() {
   try {
-    let res = await fetch("https://jesonserverforzee5.herokuapp.com/courses");
+    let res = await fetch("https://jesonserver.onrender.com/courses");
     let data = await res.json();
     showMyCourses(data);
     showAllCourses(data);
@@ -173,7 +170,7 @@ function showAllCourses(data) {
 function AddOrRemoveToCart(index, flag, flagPurchase) {
   if (!flagPurchase) {
     if (flag) {
-      fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
+      fetch(`https://jesonserver.onrender.com/courses/${index}`, {
         method: "PATCH",
         body: JSON.stringify({
           cart: false,
@@ -182,7 +179,7 @@ function AddOrRemoveToCart(index, flag, flagPurchase) {
       });
       alert("Removed from Cart Successfully");
     } else {
-      fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
+      fetch(`https://jesonserver.onrender.com/courses/${index}`, {
         method: "PATCH",
         body: JSON.stringify({
           cart: true,
@@ -198,7 +195,7 @@ function AddOrRemoveToCart(index, flag, flagPurchase) {
 
 function AddOrRemoveToFav(index, flag) {
   if (flag) {
-    fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
+    fetch(`https://jesonserver.onrender.com/courses/${index}`, {
       method: "PATCH",
       body: JSON.stringify({
         fav: false,
@@ -207,7 +204,7 @@ function AddOrRemoveToFav(index, flag) {
     });
     alert("Removed from Favorites");
   } else {
-    fetch(`https://jesonserverforzee5.herokuapp.com/courses/${index}`, {
+    fetch(`https://jesonserver.onrender.com/courses/${index}`, {
       method: "PATCH",
       body: JSON.stringify({
         fav: true,
@@ -343,9 +340,7 @@ async function WatchLecturesinWindow(index) {
   document.getElementById("MyCourses").style.display = "none";
   document.getElementById("WatchLectures").style.display = "block";
   try {
-    let res = await fetch(
-      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
-    );
+    let res = await fetch(`https://jesonserver.onrender.com/courses/${index}`);
     let data = await res.json();
     showAllLectures(data);
   } catch (error) {
@@ -372,9 +367,7 @@ function showAllLectures(data) {
 async function WatchLectureOnYoutube(index, urlkey) {
   localStorage.setItem("urlKEy", urlkey);
   try {
-    let res = await fetch(
-      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
-    );
+    let res = await fetch(`https://jesonserver.onrender.com/courses/${index}`);
     let data = await res.json();
     showOnScreen(data.lectures);
   } catch (error) {

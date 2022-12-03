@@ -4,7 +4,7 @@ function addStudent(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
+      let url = "https://jesonserver.onrender.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
@@ -23,7 +23,7 @@ function check(data) {
   if (flag.length != 0) {
     alert("User Already Sign Up");
   } else {
-    fetch("https://jesonserverforzee5.herokuapp.com/studentLoginData", {
+    fetch("https://jesonserver.onrender.com/studentLoginData", {
       method: "POST",
       body: JSON.stringify({
         password: document.getElementById("userPassword").value,

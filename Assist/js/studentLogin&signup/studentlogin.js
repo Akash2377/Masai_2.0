@@ -4,7 +4,7 @@ function submitData(event) {
   getDataFromServer();
   async function getDataFromServer() {
     try {
-      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
+      let url = "https://jesonserver.onrender.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       check(data);
