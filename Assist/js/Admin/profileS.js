@@ -21,7 +21,7 @@ function Changepage() {
 getDataFromServer();
 async function getDataFromServer() {
   try {
-    let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
+    let url = "https://jesonserver.onrender.com/adminLoginData";
     let res = await fetch(url);
     let data = await res.json();
     ShowDataOnProfile(data);
@@ -50,9 +50,7 @@ async function pointOutAdmin(event) {
   event.preventDefault();
   let keyUser = localStorage.getItem("KeyOfLogin");
   try {
-    let res = await fetch(
-      "https://jesonserverforzee5.herokuapp.com/adminLoginData"
-    );
+    let res = await fetch("https://jesonserver.onrender.com/adminLoginData");
     let data = await res.json();
     let index = 1;
     for (var i = 0; i < data.length; i++) {
@@ -66,7 +64,7 @@ async function pointOutAdmin(event) {
   }
 }
 function UpdateSA(index) {
-  fetch(`https://jesonserverforzee5.herokuapp.com/adminLoginData/${index}`, {
+  fetch(`https://jesonserver.onrender.com/adminLoginData/${index}`, {
     method: "PATCH",
     body: JSON.stringify({
       name: document.getElementById("nameSA").value,

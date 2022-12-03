@@ -11,9 +11,7 @@ fetchPrice(courseID);
 fetchStudent();
 async function fetchStudent() {
   try {
-    let res = await fetch(
-      `https://jesonserverforzee5.herokuapp.com/studentLoginData`
-    );
+    let res = await fetch(`https://jesonserver.onrender.com/studentLoginData`);
     let data = await res.json();
     findRealStudent(data);
   } catch (error) {
@@ -32,9 +30,7 @@ function findRealStudent(data) {
 }
 async function fetchPrice(index) {
   try {
-    let res = await fetch(
-      `https://jesonserverforzee5.herokuapp.com/courses/${index}`
-    );
+    let res = await fetch(`https://jesonserver.onrender.com/courses/${index}`);
     let data = await res.json();
     displayPaymentData(data);
   } catch (error) {

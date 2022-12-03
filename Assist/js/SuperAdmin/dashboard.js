@@ -29,12 +29,12 @@ function AddStudentInClass(event) {
   async function getDataFromServer() {
     try {
       if (flagcheck == "Add New Admin") {
-        let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
+        let url = "https://jesonserver.onrender.com/adminLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
       } else {
-        let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
+        let url = "https://jesonserver.onrender.com/studentLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
@@ -64,7 +64,7 @@ function check(data) {
     }
   } else {
     if (flagcheck == "Add New Admin") {
-      fetch("https://jesonserverforzee5.herokuapp.com/adminLoginData", {
+      fetch("https://jesonserver.onrender.com/adminLoginData", {
         method: "POST",
         body: JSON.stringify({
           name: document.getElementById("StudName").value,
@@ -79,7 +79,7 @@ function check(data) {
         headers: { "Content-Type": "application/json" },
       });
     } else {
-      fetch("https://jesonserverforzee5.herokuapp.com/studentLoginData", {
+      fetch("https://jesonserver.onrender.com/studentLoginData", {
         method: "POST",
         body: JSON.stringify({
           name: document.getElementById("StudName").value,
@@ -101,12 +101,12 @@ showDataInTable();
 async function showDataInTable() {
   try {
     if (flagcheck == "Add New Admin") {
-      let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
+      let url = "https://jesonserver.onrender.com/adminLoginData";
       let res = await fetch(url);
       let data = await res.json();
       displayDataInTable(data);
     } else {
-      let url = "https://jesonserverforzee5.herokuapp.com/studentLoginData";
+      let url = "https://jesonserver.onrender.com/studentLoginData";
       let res = await fetch(url);
       let data = await res.json();
       displayDataInTable(data);
@@ -152,7 +152,7 @@ function displayDataInTable(data) {
 }
 function deleteSTD(index) {
   if (flagcheck == "Add New Admin") {
-    fetch(`https://jesonserverforzee5.herokuapp.com/adminLoginData/${index}`, {
+    fetch(`https://jesonserver.onrender.com/adminLoginData/${index}`, {
       method: "DELETE",
       body: JSON.stringify({}),
       headers: {
@@ -161,16 +161,13 @@ function deleteSTD(index) {
     });
     showDataInTable();
   } else {
-    fetch(
-      `https://jesonserverforzee5.herokuapp.com/studentLoginData/${index}`,
-      {
-        method: "DELETE",
-        body: JSON.stringify({}),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    fetch(`https://jesonserver.onrender.com/studentLoginData/${index}`, {
+      method: "DELETE",
+      body: JSON.stringify({}),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     showDataInTable();
   }
 }

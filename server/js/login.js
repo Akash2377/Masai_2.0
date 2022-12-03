@@ -6,13 +6,12 @@ function submitData(event) {
   async function getDataFromServer() {
     try {
       if (flagcheck == "Admin Sign in") {
-        let url = "https://jesonserverforzee5.herokuapp.com/adminLoginData";
+        let url = "https://jesonserver.onrender.com/adminLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
       } else {
-        let url =
-          "https://jesonserverforzee5.herokuapp.com/superAdminLoginData";
+        let url = "https://jesonserver.onrender.com/superAdminLoginData";
         let res = await fetch(url);
         let data = await res.json();
         check(data);
